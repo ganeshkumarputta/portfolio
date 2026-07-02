@@ -17,7 +17,7 @@ const Navbar = () => {
     { name: "Home", target: "home" },
     { name: "About", target: "about" },
     { name: "Skills", target: "skills" },
-    { name: "Projects", target: "expertise" },
+    { name: "Projects", target: "projects" },
     { name: "Contact", target: "contact" },
   ];
 

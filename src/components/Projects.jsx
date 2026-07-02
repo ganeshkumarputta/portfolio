@@ -56,7 +56,7 @@ const TagCard = ({ number, title, text, className, aosDelay, aosType, pathLength
   );
 };
 
-const Expertise = () => {
+const Projects = () => {
   const containerRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -68,7 +68,7 @@ const Expertise = () => {
 
   return (
     <section
-      id="expertise"
+      id="projects"
       ref={containerRef}
       className="bg-white pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:80px_80px]"
     >
@@ -77,10 +77,10 @@ const Expertise = () => {
         {/* Header Content */}
         <div data-aos="fade-up" className="md:absolute top-10 left-0 md:w-[450px] z-20 mb-16 md:mb-0">
           <div className="inline-block border border-gray-300 rounded-full px-5 py-1.5 text-sm text-gray-600 font-bold mb-8 shadow-sm bg-white">
-            My Expertise
+            My Projects
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 leading-[1.1] mb-6 tracking-tight relative">
-            Building Modern Digital Solutions with Code & AI
+            Featured Projects
             {/* Hand-drawn arrow */}
             <svg className="absolute -bottom-10 right-10 w-12 h-12 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" className="hidden" />
@@ -88,7 +88,7 @@ const Expertise = () => {
             </svg>
           </h2>
           <p className="text-gray-500 text-base md:text-lg max-w-sm font-medium leading-relaxed">
-            Combining full-stack development, artificial intelligence, and cloud technologies to create scalable and impactful digital experiences.
+            Here are some of the projects I have built using React, Python, FastAPI, Machine Learning, SQL, and modern software development technologies.
           </p>
         </div>
 
@@ -169,48 +169,48 @@ const Expertise = () => {
         <div className="flex flex-col gap-8 md:gap-12 items-center md:block relative z-10 w-full pt-4 md:pt-0 pb-12 md:pb-0">
 
           <TagCard
-  number="01"
-  title="FinMentor"
-  text="An AI-powered financial mentor built using React, FastAPI, Groq API, Firebase Authentication, Capacitor, and cloud deployment. Includes voice interaction, PDF export, authentication, and financial guidance."
-  className="md:absolute md:top-[10px] md:right-[5%] lg:right-[10%] rotate-2 md:rotate-6"
-  aosType="fade-left"
-  aosDelay="100"
-  pathLength={pathLength}
-  containerRef={containerRef}
-/>
+            number="01"
+            title="FinMentor"
+            text="An AI-powered financial mentor built using React, FastAPI, Groq API, Firebase Authentication, Capacitor, and cloud deployment. Includes voice interaction, PDF export, authentication, and financial guidance."
+            className="md:absolute md:top-[10px] md:right-[5%] lg:right-[10%] rotate-2 md:rotate-6"
+            aosType="fade-left"
+            aosDelay="100"
+            pathLength={pathLength}
+            containerRef={containerRef}
+          />
 
-<TagCard
-  number="02"
-  title="Stock Market Price Analysis"
-  text="A machine learning project that analyzes historical stock market data, identifies trends, and generates price prediction insights using Python and data analysis techniques."
-  className="md:absolute md:top-[450px] md:left-[5%] lg:left-[10%] -rotate-2 md:-rotate-6"
-  aosType="fade-right"
-  aosDelay="200"
-  pathLength={pathLength}
-  containerRef={containerRef}
-/>
+          <TagCard
+            number="02"
+            title="Stock Market Price Analysis"
+            text="A machine learning project that analyzes historical stock market data, identifies trends, and generates price prediction insights using Python and data analysis techniques."
+            className="md:absolute md:top-[450px] md:left-[5%] lg:left-[10%] -rotate-2 md:-rotate-6"
+            aosType="fade-right"
+            aosDelay="200"
+            pathLength={pathLength}
+            containerRef={containerRef}
+          />
 
-<TagCard
-  number="03"
-  title="E-Commerce Platform"
-  text="A full-stack e-commerce application built with React, Python, FastAPI, and SQL. Includes product browsing, shopping cart functionality, authentication, and backend API integration."
-  className="md:absolute md:top-[700px] md:right-[5%] lg:right-[15%] rotate-1 md:rotate-3"
-  aosType="fade-left"
-  aosDelay="300"
-  pathLength={pathLength}
-  containerRef={containerRef}
-/>
+          <TagCard
+            number="03"
+            title="E-Commerce Platform"
+            text="A full-stack e-commerce application built with React, Python, FastAPI, and SQL. Includes product browsing, shopping cart functionality, authentication, and backend API integration."
+            className="md:absolute md:top-[700px] md:right-[5%] lg:right-[15%] rotate-1 md:rotate-3"
+            aosType="fade-left"
+            aosDelay="300"
+            pathLength={pathLength}
+            containerRef={containerRef}
+          />
 
-<TagCard
-  number="04"
-  title="Software Development"
-  text="Focused on writing clean code, solving problems, building scalable applications, and creating practical software solutions using modern technologies."
-  className="md:absolute md:top-[1050px] md:left-[15%] lg:left-[25%] -rotate-1 md:-rotate-3"
-  aosType="fade-right"
-  aosDelay="400"
-  pathLength={pathLength}
-  containerRef={containerRef}
-/>
+          <TagCard
+            number="04"
+            title="Software Development"
+            text="Focused on writing clean code, solving problems, building scalable applications, and creating practical software solutions using modern technologies."
+            className="md:absolute md:top-[1050px] md:left-[15%] lg:left-[25%] -rotate-1 md:-rotate-3"
+            aosType="fade-right"
+            aosDelay="400"
+            pathLength={pathLength}
+            containerRef={containerRef}
+          />
 
           {/* Hand-drawn end text */}
           <div
@@ -228,4 +228,4 @@ const Expertise = () => {
   );
 };
 
-export default Expertise;
+export default Projects;
